@@ -15,6 +15,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import java.util.Calendar;
+import java.util.Date;
 
 import com.firebase.client.Firebase;
 import com.google.firebase.database.DataSnapshot;
@@ -54,21 +56,21 @@ public class MainActivity extends AppCompatActivity {
         LocationLong =(EditText)findViewById(R.id.etLocationLong);
         final String z= LocationLat.getText().toString().trim();
         final String zz = LocationLong.getText().toString().trim();
-
+        final Date currentTime = Calendar.getInstance().getTime();
         sendData=(Button) findViewById(R.id.sendData);
         url=new Firebase("https://myapp-f80a0.firebaseio.com/");
         //sendData.setOnClickListener(this);
         sendData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-            Firebase firebase = url.child("Name");
+            Firebase firebase = url.child("Name").push();
+
             firebase.setValue(z);
-            firebase.setValue(z.concat(zz));
+            firebase.setValue(z.concat(zz)+currentTime.toString().trim());
             //Firebase firebase2 = url.child("Value");  THE CONTENT IN COMMENTS ARE MY TRIALS
             //firebase2.setValue(LocationLat); THE CODE RUNS SUCCESSFULLY...
             }
         });
-
 
     }
 
