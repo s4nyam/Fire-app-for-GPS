@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:748285857633:android:32b969c2cc061c40",
         "android_client_info": {
-          "package_name": "com.example.sanyam.myapp"
+          "package_name": "com.fireapp.sanyam.myapp"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "748285857633-3s6g8n95ji7jd8cgp4afck3r21q449p3.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.sanyam.myapp",
+            "package_name": "com.fireapp.sanyam.myapp",
             "certificate_hash": "36c805c0c6aaaebee746edfe1d4884c449918bad"
           }
         },
