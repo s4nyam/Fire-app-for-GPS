@@ -26,6 +26,10 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 
+/**
+ * Created by Sanyam on 23-12-2017.
+ */
+
 public class Main2Activity extends AppCompatActivity {
     SignInButton button;
     FirebaseAuth mAuth;

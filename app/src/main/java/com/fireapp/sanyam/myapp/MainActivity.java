@@ -1,5 +1,9 @@
 package com.fireapp.sanyam.myapp;
 
+/**
+ * Created by Sanyam on 23-12-2017.
+ */
+
 import android.*;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -35,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
     private Button sendData;
     Firebase url;
     // private FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
-    //private DatabaseReference rootRef=firebaseDatabase.getReference();
+    //private DatabaseReference rootRef=firebaseDatabase.getReference();CODE BY SANYAM
     private DatabaseReference databaseReference;
     EditText LocationLat;
     EditText LocationLong;
@@ -52,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         //     @Override
         //     public void onClick(View view){
         //          Update();
-        //     }
+        //     }CODE BY SANYAM
         // });
         //dataCoo = FirebaseDatabase.getInstance().getReference("coordinates");
         editTextName = (EditText) findViewById(R.id.editTextName);
@@ -124,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
 
     //private void Update(){
     //String latti = etLocationLat.getText().toString();
-    //String longi = etLocationLong.getText().toString();
+    //String longi = etLocationLong.getText().toString();CODE BY SANYAM
 
     //dataCoo.push().getKey();
     //coordinates coo = new coordinates(latti,longi);
